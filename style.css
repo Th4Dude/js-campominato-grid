@@ -88,6 +88,9 @@
     height: calc(100% /10);
     border: .0625rem solid black;
 }
+.color-blue{
+    background-color: cadetblue;
+}
 
 /* ---MAIN--- */
 

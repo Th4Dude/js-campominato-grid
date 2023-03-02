@@ -1,28 +1,32 @@
 'use strict'
-
-{/* <div class="cell">1</div> */}
-
-
-
+const containerCells = document.querySelector('.container-cells')
 
 /* -------functions------- */
-function createCell(elemento, nomeClass){
+
+function createCell(elemento, nomeClass, valore){
     const cellElement = document.createElement(elemento);
     cellElement.classList.add(nomeClass);
-    return cellElement
+    cellElement.innerText = valore;
+    cellElement.addEventListener('click', function(){
+        console.log(valore);
+        cellElement.classList.toggle('color-blue')
+    })
+    return cellElement;
 }
 
 function containerCellsAppend(container, elemento){
     container.append(elemento);
 }
 
-
 /* -------functions------- */
 
+/* Ciclo for */
 
-const containerCells = document.querySelector('.container-cells')
+let cellNumber = 100
 
-const elementoCreato = createCell('div' , 'cell');
+for( let i = 1 ; i <= cellNumber; i++){
+    const elementoCreato = createCell('div' , 'cell' , i );
+    containerCellsAppend(containerCells,elementoCreato);
+}
 
-containerCellsAppend(containerCells,elementoCreato);
-
+/* Ciclo for */

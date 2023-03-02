@@ -5,7 +5,11 @@ L’utente clicca su un bottone che genererà una griglia di gioco quadrata. Ogn
 
 /* ------------------------------------------- */
 
-
+prendo il contenitore da html e creo variabile su js
+creo una funzione della cella
+creo una funzione che andro' ad utlizzare nel mio ciclo for per appendere le mie celle
+creo una variabile che dico quante celle voglio
+a quel punto creo un ciclo for e mi appendo tutte le celle desiderate
 
 
 
