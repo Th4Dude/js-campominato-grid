@@ -8,6 +8,8 @@
 
 /* ---RESET--- */
 
+/* ------------------------------------------- */
+
 /* ---COMMON--- */
 
 .container-main{
@@ -18,6 +20,9 @@
 .container-center{
     background-color: cornflowerblue;
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container-top, .container-bottom {
     display: flex;
@@ -35,6 +40,8 @@
 }
 
 /* ---COMMON--- */
+
+/* ------------------------------------------- */
 
 /* ---HEADER--- */
 
@@ -62,14 +69,33 @@
   }
 /* ---HEADER--- */
 
-/* ---MAIN--- */
-
-
-
+/* ------------------------------------------- */
 
 /* ---MAIN--- */
 
-/* ---FOOTER--- */
+.container-cells{
+    height: 34.375rem;
+    width: 34.375rem;
+    background-color: rgb(130, 222, 228);
+    border-radius: .3125rem;
+    display: flex;
+    flex-wrap: wrap ;
+    align-content: flex-start;
+
+}
+.cell{
+    width: calc(100% / 10);
+    height: calc(100% /10);
+    border: .0625rem solid black;
+}
+
+/* ---MAIN--- */
+
+/* ------------------------------------------- */
 
 /* ---FOOTER--- */
 
+
+/* ---FOOTER--- */
+
+/* ------------------------------------------- */
