@@ -1,7 +1,21 @@
 'use strict'
+
 const containerCells = document.querySelector('.container-cells')
 
+/*-------event bottone------- */
+
+let bottone = document.querySelector(".button-01");
+
+bottone.addEventListener("click", function() {
+    let container = document.querySelector('.container-cells');
+    container.classList.toggle("mostra");
+    console.log(container)
+});
+
+/*-------event bottone------- */
+
 /* -------functions------- */
+
 
 function createCell(elemento, nomeClass, valore){
     const cellElement = document.createElement(elemento);
@@ -30,3 +44,4 @@ for( let i = 1 ; i <= cellNumber; i++){
 }
 
 /* Ciclo for */
+
